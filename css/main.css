@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*--------------------------------------------------------------font-family: 'Lily Script One', cursive;
+/*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
----------------------------------------------------------------- font-family: 'Montserrat', sans-serif;
-
+---------------------------------------------------------------- 
 1.0 - Typography
 	1.1 - Headings
 	1.2 - Body Copy
@@ -14,8 +13,6 @@
 	1.6 - Tables
 2.0 - Navigation Menus
 	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
 3.0 - Content
 	3.1 - Site Structure
 	3.2	- Site Header
@@ -45,7 +42,7 @@
 /*--- 1.1 Headings ---*/
 
 h1 span {
-	display:none;
+	display: none;
 }
 
 h1 {
@@ -56,11 +53,11 @@ h2 {
 	font-size: 60px;
 }
 
-h2, h3, caption, fieldset {
+h2, h3, caption, fieldset, h4, nav ul, footer p {
 	margin: 0;
 }
 
-h2, #about h3, #about li, #about time {
+h2, #about h3, #about li, #about section time {
 	color: #347067;
 }
 
@@ -73,15 +70,11 @@ h3, caption {
 	padding: 0 30px 10px;
 }
 
-#products > section:last-child h2 {
+/*--- 1.2 - Body Copy ---*/
+
+#products > section:last-child h2, fieldset:nth-child(4) {
 	margin-bottom: 100px;
 }
-
-h4 {
-	margin: 0;
-}
-
-/*--- 1.2 - Body Copy ---*/
 
 nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4, footer p {
 	color: #fff;
@@ -102,13 +95,12 @@ nav li, .btn, h3, caption, th, .col-two:first-child label, .col-two p, .col-two 
 
 #home p {
 	font-size: 80px;
-	padding: 60px 100px 60px;
+	padding: 60px 130px;
 	background-color: rgba(255,255,255,.75);
-	width: 1160px;
 	margin: 0 0 20px;
 }
 
-#home p, th:first-child, tbody tr td:first-child  {
+#home p, th:first-child, tbody tr td:first-child, #about .row p:last-child, form .col-two:last-child p:last-child, th:first-child, footer section:last-child {
 	text-align: right;
 }
 
@@ -129,30 +121,25 @@ nav ul, h2, .subhead, h3, #about section header, #products p, td, th {
 	text-align: center;
 }
 
-nav li, #about h3, footer li {
+nav li, #about h3, footer li, #home p {
 	display: inline-block;
 }
 
 
 #about .row p:first-child {
-	margin: 0 30px;
+	margin-top: 0;
 }
 
 #about .row p {
 	margin-left: 30px;
 }
 
-#about .row p:last-child {
-	text-align: right;
-	margin-top: 30px;
+#about .row p:last-child, #products .col-three:nth-child(2) p:last-child {
+	margin-top: 35px;
 }
 
 #products .col-three p:last-child {
 	margin-top: 65px;
-}
-
-#products .col-three:nth-child(2) p:last-child {
-	margin-top: 35px;
 }
 
 .subhead, td, th {
@@ -161,6 +148,10 @@ nav li, #about h3, footer li {
 
 #order .subhead {
 	margin-bottom: 40px;
+}
+
+#products .col-three h3 {
+	margin-top: 40px;
 }
 
 .btn, .col-two:last-child label {
@@ -185,18 +176,20 @@ form {
 	padding: 0 100px;
 }
 
-.col-two:first-child label, .col-two:first-child p, .col-two:last-child p:first-child {
+.col-two:first-child label, .col-two:first-child p, .col-two:last-child p:first-child, #about li {
 	margin-bottom: 5px;
 }
 
 .col-two:first-child input, select {
 	margin-bottom: 35px;
-	width: 470px;
 	height: 50px;
 }
 
-textarea {
+.col-two:first-child input, select, textarea {
 	width: 470px;
+}
+
+textarea {
 	height: 180px;
 }
 
@@ -241,10 +234,6 @@ fieldset {
 	margin-bottom: 60px;
 }
 
-fieldset:nth-child(4) {
-	margin-bottom: 100px;
-}
-
 fieldset:nth-child(5) {
 	margin-bottom: 120px;
 }
@@ -253,14 +242,10 @@ form .col-three label {
 	margin-bottom: 20px;
 }
 
-form .col-two:last-child p:last-child {
-	text-align: right;
-}
 
 /*--- 1.5 - Lists ---*/
 
 #about li {
-	margin-bottom: 5px;
 	line-height: 22px;
 }
 
@@ -287,7 +272,6 @@ th {
 }
 
 th:first-child {
-	text-align:right;
 	padding-right: 10px;
 }
 
@@ -320,19 +304,13 @@ nav li {
 	vertical-align: middle;
 }
 
-
 nav li:last-child {
 	margin-right: 0;
 }
 
 nav ul {
 	padding-left: 0;
-	margin: 0;
 }
-
-
-/*--- 2.2 - Sub ---*/
-/*--- 2.3 - Footer ---*/
 
 /*--------------------------------------------------------------
 3.0 - Content
@@ -340,10 +318,6 @@ nav ul {
 
 /*--- 3.1 - Site Structure ---*/
 
-
-#home .bg-green {
-	width: 100%;
-}
 
 .wrapper, #about > div > header, #products > section > header, #order header, .circle, table {
 	margin: 0 auto;
@@ -369,28 +343,21 @@ nav ul {
 	float: right;
 }
 
-#about img {
+#about img, #about .row section {
 	width: 190px;
 }
 
 #about .row div {
-	width: 620px;
+	width: 590px;
 }
 
-#about .row section {
-	width: 185px;
-}
 
 #about .row {
-	padding: 0 80px;
+	padding: 0 40px;
 }
 
 #products > section {
 	padding: 110px 0;
-}
-
-#products .col-three {
-	width: 290px;
 }
 
 #products .col-three:nth-child(2) {
@@ -409,18 +376,17 @@ nav ul {
 	display: block;
 }
 
-
-
 /*--- 3.2	- Site Header ---*/
 
 #home {
 	padding: 380px 0 40px;
 }
 
-#home > div {
+#home .bg-green {
 	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
 }
 
 /*--- 3.3	- Site Footer ---*/
@@ -437,13 +403,6 @@ footer {
 	padding: 35px 0;
 }
 
-footer p {
-	margin: 0;
-}
-
-footer section:last-child {
-	text-align: right;
-}
 
 /*--------------------------------------------------------------
 4.0 - Media
@@ -451,7 +410,12 @@ footer section:last-child {
 
 #home {
 	background: url(../img/hero.jpg) no-repeat center;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
 	background-size: cover;
+	
 }
 
 .circle {
@@ -459,8 +423,11 @@ footer section:last-child {
 	background-size: 100px;
 	width: 180px;
 	height: 180px;
-	border-radius: 90px; /*vendor prefixes !!----------*/
-	margin-bottom: 40px;
+	-moz-border-radius: 90px;
+	-o-border-radius: 90px;
+	-ms-border-radius: 90px;
+	-webkit-border-radius: 90px;
+	border-radius: 90px;
 }
 
 .col-three:nth-child(2) .circle {
@@ -487,15 +454,13 @@ footer section:last-child {
 
 /*--- 5.2 - Colors ---*/
 
-
 .bg-green, #products {
 	background-color: #7cc8c2;
 }
 
-.bg-dk-green, table, caption {
+.btn, table, caption, footer {
 	background-color: #347067;
 }
-
 
 /*--- 5.3 - Alignments ---*/
 
@@ -518,6 +483,10 @@ footer section:last-child {
 
 .col-two {
 	width: 470px;
+}
+
+#products .col-three {
+	width: 290px;
 }
 
 form .col-three {
