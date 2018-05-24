@@ -56,38 +56,60 @@ h2 {
 	font-size: 60px;
 }
 
-h2 {
-	color: #347067;
+h2, h3, caption, fieldset {
 	margin: 0;
 }
 
-h3 {
-	font-size: 19px;
-	margin-top: 0;
+h2, #about h3, #about li, #about time {
+	color: #347067;
+}
+
+h3, caption {
+	font-size: 20px;
+}
+
+#about h3 {
+	border-bottom: 4px solid #347067;
+	padding: 0 30px 10px;
+}
+
+#products > section:last-child h2 {
+	margin-bottom: 100px;
+}
+
+h4 {
+	margin: 0;
 }
 
 /*--- 1.2 - Body Copy ---*/
 
-p, nav li, #about li {
+nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4, footer p {
+	color: #fff;
+}
+
+p, nav li, #about li, .col-two:first-child label, .col-two p, .col-two legend, footer p, h4 {
 	font-size: 14px;
 	line-height: 28px;
 }
 
-nav li, .btn, #about .row p:nth-child(3) a, h3, #about li {
+nav li, .btn, #about .row p:nth-child(3) a, h3, #about li, caption, tbody td:first-child, .col-two label, .col-two p, .col-two legend {
 	font-weight: 700;
 }
 
-nav li, .btn, h3 {
+nav li, .btn, h3, caption, th, .col-two:first-child label, .col-two p, .col-two legend, h4 {
 	text-transform: uppercase;
 }
 
 #home p {
 	font-size: 80px;
 	padding: 60px 100px 60px;
-	text-align: right;
 	background-color: rgba(255,255,255,.75);
 	width: 1160px;
 	margin: 0 0 20px;
+}
+
+#home p, th:first-child, tbody tr td:first-child  {
+	text-align: right;
 }
 
 #home p a {
@@ -103,9 +125,14 @@ nav li, .btn, h3 {
 	font-weight: 400;
 }
 
-nav ul, h2, .subhead, h3, #about ul {
+nav ul, h2, .subhead, h3, #about section header, #products p, td, th {
 	text-align: center;
 }
+
+nav li, #about h3, footer li {
+	display: inline-block;
+}
+
 
 #about .row p:first-child {
 	margin: 0 30px;
@@ -120,10 +147,29 @@ nav ul, h2, .subhead, h3, #about ul {
 	margin-top: 30px;
 }
 
+#products .col-three p:last-child {
+	margin-top: 65px;
+}
+
+#products .col-three:nth-child(2) p:last-child {
+	margin-top: 35px;
+}
+
+.subhead, td, th {
+	font-size: 18px;
+}
+
+#order .subhead {
+	margin-bottom: 40px;
+}
+
+.btn, .col-two:last-child label {
+	font-size: 12px;
+}
+
 /*--- 1.3 - Buttons ---*/
 
 .btn {
-	font-size: 12px;
 	padding: 15px 40px;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
@@ -133,13 +179,135 @@ nav ul, h2, .subhead, h3, #about ul {
 }
 
 /*--- 1.4 - Forms ---*/
+
+form {
+	margin-top: 50px;
+	padding: 0 100px;
+}
+
+.col-two:first-child label, .col-two:first-child p, .col-two:last-child p:first-child {
+	margin-bottom: 5px;
+}
+
+.col-two:first-child input, select {
+	margin-bottom: 35px;
+	width: 470px;
+	height: 50px;
+}
+
+textarea {
+	width: 470px;
+	height: 180px;
+}
+
+.col-two input, select, textarea, fieldset {
+	border: none;
+}
+
+.col-two:last-child p:first-child {
+	margin-top: 0;
+}
+
+input, textarea, select {
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+textarea {
+	padding-top: 10px;
+}
+
+.col-two:last-child input {
+	margin-right: 10px;
+}
+
+form .col-three {
+	margin-right: 40px;
+}
+
+form .col-three:last-child {
+	margin-right: 0;
+}
+
+fieldset {
+	padding: 0;
+}
+
+legend {
+	margin-bottom: 10px;
+}
+
+fieldset {
+	margin-bottom: 60px;
+}
+
+fieldset:nth-child(4) {
+	margin-bottom: 100px;
+}
+
+fieldset:nth-child(5) {
+	margin-bottom: 120px;
+}
+
+form .col-three label {
+	margin-bottom: 20px;
+}
+
+form .col-two:last-child p:last-child {
+	text-align: right;
+}
+
 /*--- 1.5 - Lists ---*/
 
 #about li {
+	margin-bottom: 5px;
+	line-height: 22px;
+}
+
+#about li, tbody tr:nth-child(2) td:last-child, tbody tr:last-child td:last-child {
 	text-align: left;
 }
+
+#about ul {
+	list-style: square outside url(../img/cherry-icon.png);
+}
+
 /*--- 1.6 - Tables ---*/
 
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 14px 40px;
+}
+
+th {
+	padding: 18px 40px;
+}
+
+th:first-child {
+	text-align:right;
+	padding-right: 10px;
+}
+
+th:last-child {
+	padding: 18px 18px;
+}
+
+tbody tr:last-child td {
+	padding-bottom: 20px;
+}
+
+caption {
+	padding: 20px 0;
+	color: #7cc8c2;
+	border-bottom: solid 4px #7cc8c2;
+}
+
+tbody tr:nth-child(2) td:last-child, tbody tr:last-child td:last-child {
+	padding-left: 70px;
+}
 
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
@@ -148,19 +316,16 @@ nav ul, h2, .subhead, h3, #about ul {
 /*--- 2.1 - Main ---*/
 
 nav li {
-	padding-right: 80px;
+	margin-right: 80px;
+	vertical-align: middle;
 }
 
 
 nav li:last-child {
-	padding-right: 0;
+	margin-right: 0;
 }
 
-nav li {
-	display: inline-block;
-}
-
-nav ul{
+nav ul {
 	padding-left: 0;
 	margin: 0;
 }
@@ -175,11 +340,12 @@ nav ul{
 
 /*--- 3.1 - Site Structure ---*/
 
-nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4, footer p {
-	color: #fff;
+
+#home .bg-green {
+	width: 100%;
 }
 
-.wrapper, #about > header {
+.wrapper, #about > div > header, #products > section > header, #order header, .circle, table {
 	margin: 0 auto;
 }
 
@@ -191,12 +357,16 @@ nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4,
 	padding: 110px 0 160px;
 }
 
-#about > header {
+#about > div > header, #products > section > header, #order header  {
 	width: 475px;
 }
 
-#about img, #about .row div  {
+#about img, #about .row div, #products .col-three, .col-four, .col-two:first-child, form .col-three, footer section:first-child, footer div div {
 	float: left;
+}
+
+#about .row section, #products .col-three:last-child, .col-four:last-child, .col-two:last-child, form .col-three:last-child, footer section:last-child {
+	float: right;
 }
 
 #about img {
@@ -211,13 +381,34 @@ nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4,
 	width: 185px;
 }
 
-#about .row section {
-	float: right;
-}
-
 #about .row {
 	padding: 0 80px;
 }
+
+#products > section {
+	padding: 110px 0;
+}
+
+#products .col-three {
+	width: 290px;
+}
+
+#products .col-three:nth-child(2) {
+	margin-left: 150px;
+}
+
+#products > section:last-child div.row:nth-child(2) {
+	margin-bottom: 65px;
+}
+
+#order {
+	padding: 100px 0;
+}
+
+.col-two:first-child label, .col-two:first-child input, .col-two:first-child p, fieldset:nth-child(4) label{
+	display: block;
+}
+
 
 
 /*--- 3.2	- Site Header ---*/
@@ -229,11 +420,30 @@ nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4,
 #home > div {
 	position: fixed;
 	top: 0;
-	left: auto;
-	width: auto;
+	left: 0;
 }
 
 /*--- 3.3	- Site Footer ---*/
+
+footer section:first-child {
+	width: 260px;
+}
+
+footer section:last-child {
+	width: 150px;
+}
+
+footer {
+	padding: 35px 0;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer section:last-child {
+	text-align: right;
+}
 
 /*--------------------------------------------------------------
 4.0 - Media
@@ -243,20 +453,50 @@ nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4,
 	background: url(../img/hero.jpg) no-repeat center;
 	background-size: cover;
 }
+
+.circle {
+	background: #fff url(../img/product-one.png) no-repeat center;
+	background-size: 100px;
+	width: 180px;
+	height: 180px;
+	border-radius: 90px; /*vendor prefixes !!----------*/
+	margin-bottom: 40px;
+}
+
+.col-three:nth-child(2) .circle {
+	background: #fff url(../img/product-two.png) no-repeat center;
+	background-size: 100px;
+}
+
+.col-three:last-child .circle {
+	background: #fff url(../img/product-three.png) no-repeat center;
+	background-size: 100px;
+}
+
+
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
 
 /*--- 5.1 - Text Sizes ---*/
+
+.subhead {
+	margin: 15px 0 70px;
+	line-height: 25px;
+}
+
 /*--- 5.2 - Colors ---*/
+
 
 .bg-green, #products {
 	background-color: #7cc8c2;
 }
 
-.bg-dk-green {
+.bg-dk-green, table, caption {
 	background-color: #347067;
 }
+
+
 /*--- 5.3 - Alignments ---*/
 
 .wrapper {
@@ -267,8 +507,19 @@ nav a, #products section:first-child h2, a[class*="btn"], #order h2, th, td, h4,
 	overflow: auto;
 }
 
-.subhead {
-	margin: 15px 0 70px;
-	font-size: 17px;
-	line-height: 25px;
+.col-four {
+	width: 270px;
+	margin-right: 30px;
+}
+
+.col-four:last-child {
+	margin-right: 0;
+}
+
+.col-two {
+	width: 470px;
+}
+
+form .col-three {
+	width: 130px;
 }
