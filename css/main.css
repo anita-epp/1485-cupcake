@@ -20,8 +20,7 @@
 4.0 - Media
 5.0 - Utility
 	5.1 - Text Sizes
-	5.2 - Colors
-	5.3 - Alignments
+	5.2 - Alignments
 
 --------------------------------------------------------------*/
 
@@ -39,38 +38,17 @@
 1.0 - Typography
 -------------------------------------------------------------- */
 
-/*--- 1.1 Headings ---*/
-
-h1 span {
-	display: none;
-}
-
-h1 {
-	margin: 10px 0;
-}
-
-h2 {
-	font-size: 60px;
-}
-
 h2, h3, caption, fieldset, h4, nav ul, footer p {
 	margin: 0;
 }
 
-h2, #about h3, #about li, #about section time {
+h2, #about h3, #about li, #about section time, #products .btn:hover, #order .btn:hover {
 	color: #347067;
 }
 
 h3, caption {
 	font-size: 20px;
 }
-
-#about h3 {
-	border-bottom: 4px solid #347067;
-	padding: 0 30px 10px;
-}
-
-/*--- 1.2 - Body Copy ---*/
 
 #products > section:last-child h2, fieldset:nth-child(4) {
 	margin-bottom: 100px;
@@ -89,26 +67,15 @@ nav li, .btn, #about .row p:nth-child(3) a, h3, #about li, caption, tbody td:fir
 	font-weight: 700;
 }
 
-nav li, .btn, h3, caption, th, .col-two:first-child label, .col-two p, .col-two legend, h4 {
-	text-transform: uppercase;
-}
-
-#home p {
-	font-size: 80px;
-	padding: 60px 130px;
-	background-color: rgba(255,255,255,.75);
-	margin: 0 0 20px;
-}
-
 #home p, th:first-child, tbody tr td:first-child, #about .row p:last-child, form .col-two:last-child p:last-child, th:first-child, footer section:last-child {
 	text-align: right;
 }
 
-#home p a {
-	color: #f14537;
+nav li, .btn, h3, caption, th, .col-two:first-child label, .col-two p, .col-two legend, h4 {
+	text-transform: uppercase;
 }
 
-#home p a, nav a, .btn, #about .row p:nth-child(3) a {
+#home p a, nav a, .btn, #about .row p:nth-child(3) a, footer a {
 	text-decoration: none;
 }
 
@@ -125,6 +92,53 @@ nav li, #about h3, footer li, #home p {
 	display: inline-block;
 }
 
+.subhead, td, th {
+	font-size: 18px;
+}
+
+.btn, .col-two:last-child label {
+	font-size: 12px;
+}
+
+.col-two:first-child label, .col-two:first-child p, .col-two:last-child p:first-child, #about li {
+	margin-bottom: 5px;
+}
+
+#about li, tbody tr:nth-child(2) td:last-child, tbody tr:last-child td:last-child {
+	text-align: left;
+}
+
+/*--- 1.1 Headings ---*/
+
+h1 span {
+	display: none;
+}
+
+h1 {
+	margin: 10px 0;
+}
+
+h2 {
+	font-size: 60px;
+}
+
+#about h3 {
+	border-bottom: 4px solid #347067;
+	padding: 0 30px 10px;
+}
+
+/*--- 1.2 - Body Copy ---*/
+
+#home p {
+	font-size: 80px;
+	padding: 60px 130px;
+	background-color: rgba(255,255,255,.75);
+	margin: 0 0 20px;
+}
+
+#home p a {
+	color: #f14537;
+}
 
 #about .row p:first-child {
 	margin-top: 0;
@@ -142,10 +156,6 @@ nav li, #about h3, footer li, #home p {
 	margin-top: 65px;
 }
 
-.subhead, td, th {
-	font-size: 18px;
-}
-
 #order .subhead {
 	margin-bottom: 40px;
 }
@@ -154,8 +164,8 @@ nav li, #about h3, footer li, #home p {
 	margin-top: 40px;
 }
 
-.btn, .col-two:last-child label {
-	font-size: 12px;
+#about p:nth-child(3) a:hover {
+	color: #7cc8c2;
 }
 
 /*--- 1.3 - Buttons ---*/
@@ -176,10 +186,6 @@ form {
 	padding: 0 100px;
 }
 
-.col-two:first-child label, .col-two:first-child p, .col-two:last-child p:first-child, #about li {
-	margin-bottom: 5px;
-}
-
 .col-two:first-child input, select {
 	margin-bottom: 35px;
 	height: 50px;
@@ -191,9 +197,14 @@ form {
 
 textarea {
 	height: 180px;
+	padding-top: 10px;
 }
 
 .col-two input, select, textarea, fieldset {
+	border: 2px solid transparent;
+}
+
+fieldset {
 	border: none;
 }
 
@@ -204,10 +215,6 @@ textarea {
 input, textarea, select {
 	padding-left: 10px;
 	font-size: 14px;
-}
-
-textarea {
-	padding-top: 10px;
 }
 
 .col-two:last-child input {
@@ -224,14 +231,11 @@ form .col-three:last-child {
 
 fieldset {
 	padding: 0;
+	margin-bottom: 60px;
 }
 
 legend {
 	margin-bottom: 10px;
-}
-
-fieldset {
-	margin-bottom: 60px;
 }
 
 fieldset:nth-child(5) {
@@ -242,15 +246,16 @@ form .col-three label {
 	margin-bottom: 20px;
 }
 
+.col-two:first-child input:focus, textarea:focus, select:focus {
+	border: 2px solid #347067;
+	outline: none;
+}
+
 
 /*--- 1.5 - Lists ---*/
 
 #about li {
 	line-height: 22px;
-}
-
-#about li, tbody tr:nth-child(2) td:last-child, tbody tr:last-child td:last-child {
-	text-align: left;
 }
 
 #about ul {
@@ -308,9 +313,18 @@ nav li:last-child {
 	margin-right: 0;
 }
 
-nav ul {
+nav ul, nav li:nth-child(3) a {
 	padding-left: 0;
 }
+
+nav a:hover {
+	background: url(../img/cherry-icon.png) no-repeat 0 0;
+}
+
+nav a {
+	padding-left: 20px;
+}
+
 
 /*--------------------------------------------------------------
 3.0 - Content
@@ -323,7 +337,7 @@ nav ul {
 	margin: 0 auto;
 }
 
-#about, #products > section:last-child {
+#about, #products > section:last-child, #products .btn:hover, #order .btn:hover {
 	background-color: #edf7f6;
 }
 
@@ -335,7 +349,7 @@ nav ul {
 	width: 475px;
 }
 
-#about img, #about .row div, #products .col-three, .col-four, .col-two:first-child, form .col-three, footer section:first-child, footer div div {
+#about img, #about .row div, #products .col-three, .col-four, .col-two:first-child, form .col-three, footer section:first-child, footer .row div, footer a {
 	float: left;
 }
 
@@ -350,7 +364,6 @@ nav ul {
 #about .row div {
 	width: 590px;
 }
-
 
 #about .row {
 	padding: 0 40px;
@@ -376,6 +389,14 @@ nav ul {
 	display: block;
 }
 
+.bg-green, #products, #about .btn {
+	background-color: #7cc8c2;
+}
+
+.btn, table, caption, footer, #about .btn:hover {
+	background-color: #347067;
+}
+
 /*--- 3.2	- Site Header ---*/
 
 #home {
@@ -387,6 +408,11 @@ nav ul {
 	top: 0;
 	left: 0;
 	width: 100%;
+	-moz-box-shadow: 0 1px 3px #347067;
+	-o-box-shadow: 0 1px 3px #347067;
+	-webkit-box-shadow: 0 1px 3px #347067;
+	-ms-box-shadow: 0 1px 3px #347067;
+	box-shadow: 0 1px 3px #347067;
 }
 
 /*--- 3.3	- Site Footer ---*/
@@ -403,6 +429,63 @@ footer {
 	padding: 35px 0;
 }
 
+footer span {
+	display: none;
+}
+
+footer li:first-child a {
+	background: url(../img/social-media-sprites.png) no-repeat 0 0;
+}
+
+footer li:first-child a:hover {
+	background: url(../img/social-media-sprites.png) no-repeat 0 -40px;
+}
+
+footer li:nth-child(2) a {
+	background: url(../img/social-media-sprites.png) no-repeat -40px 0;
+}
+
+footer li:nth-child(2) a:hover {
+	background: url(../img/social-media-sprites.png) no-repeat -40px -40px;
+}
+
+footer li:nth-child(3) a {
+	background: url(../img/social-media-sprites.png) no-repeat -80px 0;
+}
+
+footer li:nth-child(3) a:hover {
+	background: url(../img/social-media-sprites.png) no-repeat -80px -40px;
+}
+
+footer li:nth-child(4) a {
+	background: url(../img/social-media-sprites.png) no-repeat -120px 0;
+}
+
+footer li:nth-child(4) a:hover {
+	background: url(../img/social-media-sprites.png) no-repeat -120px -40px;
+}
+
+footer li:last-child a {
+	background: url(../img/social-media-sprites.png) no-repeat -160px 0;
+}
+
+footer li:last-child a:hover {
+	background: url(../img/social-media-sprites.png) no-repeat -160px -40px;
+}
+
+footer li a {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+}
+
+footer .row div {
+	margin-left: 170px;
+}
+
+footer ul {
+	padding-top: 20px;
+}
 
 /*--------------------------------------------------------------
 4.0 - Media
@@ -419,8 +502,7 @@ footer {
 }
 
 .circle {
-	background: #fff url(../img/product-one.png) no-repeat center;
-	background-size: 100px;
+	background: #fff url(../img/product-one.png) no-repeat center/100px;
 	width: 180px;
 	height: 180px;
 	-moz-border-radius: 90px;
@@ -431,13 +513,11 @@ footer {
 }
 
 .col-three:nth-child(2) .circle {
-	background: #fff url(../img/product-two.png) no-repeat center;
-	background-size: 100px;
+	background: #fff url(../img/product-two.png) no-repeat center/100px;
 }
 
 .col-three:last-child .circle {
-	background: #fff url(../img/product-three.png) no-repeat center;
-	background-size: 100px;
+	background: #fff url(../img/product-three.png) no-repeat center/100px;
 }
 
 
@@ -452,17 +532,7 @@ footer {
 	line-height: 25px;
 }
 
-/*--- 5.2 - Colors ---*/
-
-.bg-green, #products {
-	background-color: #7cc8c2;
-}
-
-.btn, table, caption, footer {
-	background-color: #347067;
-}
-
-/*--- 5.3 - Alignments ---*/
+/*--- 5.2 - Alignments ---*/
 
 .wrapper {
 	width: 1170px;

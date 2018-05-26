@@ -11,7 +11,7 @@
 <body>
 <header id="home">
 	<div class="bg-green">
-		<nav class="wrapper">
+		<nav class="wrapper smooth-scroll">
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
 			</ul>
 		</nav>
 	</div>
-	<p><a class="cursive" href="#products">Try our signature cupcake</a></p>
+	<p class="smooth-scroll"><a class="cursive" href="#products">Try our signature cupcake</a></p>
 </header>
 <section id="about">
 	<div class="wrapper">
@@ -35,7 +35,7 @@
 				<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
 				<p>We are open 7 days a week, beginning Sunday at <time datetime="11:00">11 am</time> till <time datetime="16:00">4 pm</time>. Monday through Friday <time datetime="08:00">8 am</time> till <time datetime="19:00">7 pm</time>, and Saturday <time datetime="10:00">10 am</time> to <time datetime="17:00">5 pm</time>.</p>
 				<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="tel:+18004025555">please give us a call.</a></p>
-				<p><a class="btn bg-green" href="#order">Contact Us</a></p>
+				<p class="smooth-scroll"><a class="btn bg-green" href="#order">Contact Us</a></p>
 			</div>
 			<section>
 				<header>
@@ -63,7 +63,7 @@
 					<h3>Signature Cupcakes</h3>
 				</header>
 				<p>Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
-				<p><a class="btn" href="#order">Order Now</a></p>
+				<p class="smooth-scroll"><a class="btn" href="#order">Order Now</a></p>
 			</section>
 			<section class="col-three">
 				<div class="circle"></div>
@@ -71,7 +71,7 @@
 					<h3>Allergen Free</h3>
 				</header>
 				<p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake.</p>
-				<p><a class="btn" href="#order">Order Now</a></p>
+				<p class="smooth-scroll"><a class="btn" href="#order">Order Now</a></p>
 			</section>
 			<section class="col-three">
 				<div class="circle"></div>
@@ -79,7 +79,7 @@
 					<h3>Vegan</h3>
 				</header>
 				<p> Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate I love</p>
-				<p><a class="btn" href="#order">Order Now</a></p>
+				<p class="smooth-scroll"><a class="btn" href="#order">Order Now</a></p>
 			</section>
 		</div>		
 	</section>
@@ -193,13 +193,13 @@
 			<div class="col-two">
 				<p>Occasion</p>
 				<select name="occassion">
-					<option>Anniversary</option>
-					<option>Baby Shower</option>
-					<option>Birthday</option>
-					<option>Office Event</option>
-					<option>Graduation</option>
-					<option>Valentine's Day</option>
-					<option>Wedding</option>
+					<option value="anniversary">Anniversary</option>
+					<option value="baby-shower">Baby Shower</option>
+					<option value="birthday">Birthday</option>
+					<option value="office-event">Office Event</option>
+					<option value="grad">Graduation</option>
+					<option value="valentine">Valentine's Day</option>
+					<option value="wedding">Wedding</option>
 				</select>
 				<fieldset>
 					<legend>Quantity</legend>
@@ -248,7 +248,7 @@
 						</div>
 					</div>
 				</fieldset>
-				<p><a class="btn" href="#">Pay on Paypal</a></p>
+				<p class="smooth-scroll"><a class="btn" href="#home">Pay on Paypal</a></p>
 			</div>
 		</form>
 	</div>
@@ -273,6 +273,8 @@
 			<p>123 Fake Street #101<br>Fakersville, FA 12345</p>
 		</section>
 	</div>
-</footer>	
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>
